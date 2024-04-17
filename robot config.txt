@@ -1,0 +1,53 @@
+IO pins
+Dig: (8)
+4 for encoders
+2 for claw
+2 for Mag Drop
+
+PWM: (10)
+2 for drivetrain
+3 for intake
+1 for tote-lift
+1 for bin-lift
+1 for claw
+1 for coopetition-ramps
+1 for mag-drop
+
+Analog: (4)
+2 for intake
+1 for tote-lift
+1 for bin Lift
+
+
+drivetrain:
+2 motors (one left one right)
+powered by talons (old talons or victors)
+encoder on each side (baumer with gearing)
+
+Intake mechanism:
+motor on each for spin (two)
+motor on each for tilting (two)
+pot on each for arm angle (two)
+clutch allows for motor slippage while maintaining pot data
+(different speeds for wheel rotation, using current draw)
+(soft limit for arm angle due to wheels toching each other)
+
+Tote-lift:
+one motor & one Pot
+(same as bin-lift)
+
+Bin-lift:
+one motor & one Pot
+(PID gravity affected very mucho, multiple positions)
+
+Claw:
+one motor & two limit switches (travel endpoints)
+(either in or out, needs a timer to stop)
+
+coopertition-ramps:
+two servos (PWM) (can be y-conector'd)
+(either up or down)
+
+Magazine-drop:
+one motor & 2 limit switches
+(two position)
